@@ -57,11 +57,10 @@
 }
 
 .clearsearch {
-  background: #f8f8f8;
+  background: #00e;
   padding: 10px 8px;
   align-self: center;
   text-decoration-line: none;
-  color: #00e;
   font-weight: bold;
   box-sizing: border-box;
   width: 38px;
@@ -92,8 +91,6 @@
 
 @media screen and (max-width: 754px) {
   .clearsearch {
-    background: #00e;
-    padding: 12px;
-    color: #fff;
+    padding: 10px 8px;
   }
  }

@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import './App.css'
 import loading from '../img/loading.gif'
+import back from '../img/back-ico.png'
 
 // Component
 import Search from './Search'
@@ -76,7 +77,7 @@ class App extends Component {
       <div className={"App" + dynamicClass}>
         <div className="hero-area">
           <div className="container">
-          <a href="/" onClick={this.clearSearch} className="clearsearch" > &#x1F878; </a>  
+          <a href="/" onClick={this.clearSearch} className="clearsearch" > <img src={back} alt="<<"/> </a>  
           <Search jsonp={ this.props.jsonp } setData={ this.setData }  setResult={ this.setResult } />
           <Random />
           </div>

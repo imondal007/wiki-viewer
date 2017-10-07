@@ -1,0 +1,90 @@
+.App {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  min-height: 101vh;
+}
+
+.App.no-result {
+  min-height: 100vh;
+  background: #fc0505 url(../img/bg.jpg) center fixed no-repeat;
+  background-size: cover;
+}
+
+.no-result .hero-area {
+  background: transparent;
+  box-shadow: none;
+  top: 40%;
+  justify-content: center;
+}
+
+.no-result .randomLink {
+  position: absolute;
+  top: 100%;
+}
+
+.hero-area {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 8px 10px;
+  background: #fff;
+  box-shadow: 0 1px 1px rgba(0,0,0,.1), inset 0 1px rgba(255,255,255,.65);
+  height: 55px;
+  box-sizing: border-box;
+  position: absolute;
+  top: 0px;
+  transition: all 400ms ease;
+}
+
+.no-result .hero-area {
+  height: 73px;
+}
+
+.hero-area .container {
+  padding: 0 10px;
+  justify-content: space-between;
+  display: flex;
+  box-sizing: border-box;
+}
+
+.no-result .hero-area .container {
+  justify-content: center;
+}
+
+.no-result .clearsearch {
+  display: none;
+}
+
+.clearsearch {
+  background: #f8f8f8;
+  padding: 12px;
+  align-self: center;
+  text-decoration-line: none;
+  color: #00e;
+  font-weight: bold;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.result-area {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  margin-top: 55px;
+  min-height: calc(100vh - 55px)
+}
+
+.loader {
+  align-self: center;
+  display: flex;
+}
+
+
+@media screen and (max-width: 754px) {
+  .clearsearch {
+    background: #00e;
+    padding: 12px;
+    color: #fff;
+  }
+ }

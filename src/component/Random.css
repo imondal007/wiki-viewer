@@ -1,0 +1,25 @@
+.randomLink {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  background: #00e url(../img/shuffle-ico.png) no-repeat left center;
+  text-transform: capitalize;
+  background-size: contain;
+  padding: 12px 12px 12px 38px;
+  align-self: center;
+}
+
+.no-result .randomLink {
+  background: transparent url(../img/shuffle-ico.png) no-repeat left center;
+  background-size: 28px;
+  padding-left: 32px;
+}
+
+
+
+@media screen and (max-width: 754px) {
+  .randomLink {
+    font-size: 0;
+    padding: 19px;
+  }
+ }

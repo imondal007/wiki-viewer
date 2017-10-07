@@ -234,6 +234,7 @@
   select,
   textarea {
     margin: 0;
+    font-family: monospace;
   }
   
   /**
